@@ -84,6 +84,7 @@
   acme_certificate:
     acme_directory: "{{ letsencrypt_acme_directory }}"
     challenge: dns-01
+    acme_version: 2
     account_key: "{{ letsencrypt_key_directory + '/' + letsencrypt_key_filename }}"
     csr: "{{ certificate_directory + '/' + csr_filename }}"
     dest: "{{ certificate_directory + '/' + crt_filename }}"
@@ -112,6 +113,7 @@
   acme_certificate:
     acme_directory: "{{ letsencrypt_acme_directory }}"
     challenge: dns-01
+    acme_version: 2
     account_key: "{{ letsencrypt_key_directory + '/' + letsencrypt_key_filename }}"
     csr: "{{ certificate_directory + '/' + csr_filename }}"
     dest: "{{ certificate_directory + '/' + crt_filename }}"
